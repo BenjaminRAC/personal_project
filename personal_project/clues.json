@@ -1,11 +1,4 @@
 {
-    "charchters": [
-    "Cyclops",
-    "Spider-Man",
-    "Batman",
-    "Superman"
-    ],
-    
     "Cyclops": [
         "this charcter has been on several super teams.",
         "this charcter powers have sometimes been linked to another demenshion called the punch demenshion.",
@@ -28,6 +21,7 @@
         "they were one of the first to be resurected buy the 5 on krakoa.",
         "they have been on multiple xmen teams."
     ],
+    
     "Spider-Man": [
   "A gifted young hero balances his ordinary life with extraordinary responsibilities.",
   "He often finds himself juggling school, work, and saving the city.",
