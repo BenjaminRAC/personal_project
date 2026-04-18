@@ -14,55 +14,68 @@ function report(data, error = false) {
   }
   
   async function fetchData() {
-    const response = await fetch('answers.json');
-    const characters = await fetch('characters.json');
+    const response = await fetch('clues.json');
 
     //gets a random charcter 
     const randomnumber = Math.floor(Math.random() * 4);
-    const char = await characters.json();
-    const character = char[randomnumber];
 
     if (response.ok) {
       const data = await response.json();
+
+      const Cyclops = "Cyclops";
+      const char1 = response[Cyclops];
+      const Spider = "Spider-Man";
+      const char2 = response[Spider];
+      const Batman = "Batman";
+      const char3 = response[Batman];
+      const Superman = "Superman";
+      const char4 = response[Superman];
+      const char = [char1, char2, char3, char4]
+  
+      const character = char[randomnumber];
       
       const guess = document.getElementById('guess').value;
 
       if (guess != character){
         //this is where we get the qestions.
         if (randomnumber === 0){//Cyclops
-          let counter = 0;
-          while (counter <= 19){
+          let start = 0;
+          let end = 19
+          while (start <= end){
             const answer = data[counter];
             report(answer);
-            counter+= 1;
+            start+= 1;
            }
           }
 
         if (randomnumber === 1){//Spider-Man
-          let counter_2 = 20;
-          while (counter_2 <= 39){
-            const answer = data[counter_2];
+          let start = 0;
+          let end = 19
+          while (start <= end){
+            const answer = data[counter];
             report(answer);
-            counter_2+= 1;
+            start+= 1;
            }
           }
 
     
       if (randomnumber === 2){//Batman
-        let counter_3 = 40;
-        while (counter_3 <= 59){
-          const answer = data[counter_3];
-          report(answer);
-          counter_3+= 1;
+          let start = 0;
+          let end = 19
+          while (start <= end){
+            const answer = data[counter];
+            report(answer);
+            start+= 1;
          }
         }
 
         if (randomnumber === 3){//Superman
-          let counter_4 = 60;
-          while (counter_4 <= 79){
-            const answer = data[counter_4];
+          let start = 0;
+          let end = 19
+          while (start <= end){
+            const answer = data[counter];
             report(answer);
-            counter_4+= 1;
+            start+= 1;
            }
           }
 
