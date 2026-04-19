@@ -23,13 +23,13 @@ function report(data, error = false) {
       const data = await response.json();
 
       const Cyclops = "Cyclops";
-      const char1 = response[Cyclops];
+      const char1 = data[Cyclops];
       const Spider = "Spider-Man";
-      const char2 = response[Spider];
+      const char2 = data[Spider];
       const Batman = "Batman";
-      const char3 = response[Batman];
+      const char3 = data[Batman];
       const Superman = "Superman";
-      const char4 = response[Superman];
+      const char4 = data[Superman];
       const char = [char1, char2, char3, char4]
   
       const character = char[randomnumber];
