@@ -30,39 +30,43 @@ function report(data, error = false) {
       if (guess != character){
         //this is where we get the qestions.
         if (randomnumber === 0){//Cyclops
-          let counter = 0;
-          while (counter <= 19){
+          let start= 0;
+           end = 19;
+          while (start <= end){
             const answer = data[counter];
             report(answer);
-            counter+= 1;
+            start+= 1;
            }
           }
 
         if (randomnumber === 1){//Spider-Man
-          let counter_2 = 20;
-          while (counter_2 <= 39){
+          let start_2 = 0;
+           end_2 = 39;
+          while (start_2 <= end_2){
             const answer = data[counter_2];
             report(answer);
-            counter_2+= 1;
+            start_2+= 1;
            }
           }
 
     
       if (randomnumber === 2){//Batman
-        let counter_3 = 40;
-        while (counter_3 <= 59){
+        let start_3 = 40;
+         end_3 = 59;
+        while (counter_3 <= end_3){
           const answer = data[counter_3];
           report(answer);
-          counter_3+= 1;
+          start_3+= 1;
          }
         }
 
         if (randomnumber === 3){//Superman
-          let counter_4 = 60;
-          while (counter_4 <= 79){
+          let start_4 = 60;
+          end_4 = 79;
+          while (counter_4 <= end_4){
             const answer = data[counter_4];
             report(answer);
-            counter_4+= 1;
+            start_4+= 1;
            }
           }
 
