@@ -31,9 +31,9 @@ function report(data, error = false) {
         //this is where we get the qestions.
         if (randomnumber === 0){//Cyclops
           let start= 0;
-           end = 19;
+          let end = 19;
           while (start <= end){
-            const answer = data[counter];
+            const answer = data[start];
             report(answer);
             start+= 1;
            }
@@ -41,9 +41,9 @@ function report(data, error = false) {
 
         if (randomnumber === 1){//Spider-Man
           let start_2 = 0;
-           end_2 = 39;
+          let end_2 = 39;
           while (start_2 <= end_2){
-            const answer = data[counter_2];
+            const answer = data[start_2];
             report(answer);
             start_2+= 1;
            }
@@ -52,9 +52,9 @@ function report(data, error = false) {
     
       if (randomnumber === 2){//Batman
         let start_3 = 40;
-         end_3 = 59;
+        let end_3 = 59;
         while (counter_3 <= end_3){
-          const answer = data[counter_3];
+          const answer = data[start_3];
           report(answer);
           start_3+= 1;
          }
@@ -62,9 +62,9 @@ function report(data, error = false) {
 
         if (randomnumber === 3){//Superman
           let start_4 = 60;
-          end_4 = 79;
+          let end_4 = 79;
           while (counter_4 <= end_4){
-            const answer = data[counter_4];
+            const answer = data[start_4];
             report(answer);
             start_4+= 1;
            }
