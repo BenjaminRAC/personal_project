@@ -42,7 +42,7 @@ function report(data, error = false) {
           let start = 0;
           let end = 19
           while (start <= end){
-            const answer = data[counter];
+            const answer = data[start];
             report(answer);
             start+= 1;
            }
@@ -52,7 +52,7 @@ function report(data, error = false) {
           let start = 0;
           let end = 19
           while (start <= end){
-            const answer = data[counter];
+            const answer = data[start];
             report(answer);
             start+= 1;
            }
@@ -63,7 +63,7 @@ function report(data, error = false) {
           let start = 0;
           let end = 19
           while (start <= end){
-            const answer = data[counter];
+            const answer = data[start];
             report(answer);
             start+= 1;
          }
@@ -73,7 +73,7 @@ function report(data, error = false) {
           let start = 0;
           let end = 19
           while (start <= end){
-            const answer = data[counter];
+            const answer = data[start];
             report(answer);
             start+= 1;
            }
