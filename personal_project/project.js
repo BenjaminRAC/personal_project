@@ -53,7 +53,7 @@ function report(data, error = false) {
       if (randomnumber === 2){//Batman
         let start_3 = 40;
         let end_3 = 59;
-        while (counter_3 <= end_3){
+        while (start_3 <= end_3){
           const answer = data[start_3];
           report(answer);
           start_3+= 1;
@@ -63,7 +63,7 @@ function report(data, error = false) {
         if (randomnumber === 3){//Superman
           let start_4 = 60;
           let end_4 = 79;
-          while (counter_4 <= end_4){
+          while (start_4 <= end_4){
             const answer = data[start_4];
             report(answer);
             start_4+= 1;
